@@ -1,8 +1,13 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
+import { Context } from "../Context";
 
 const WelcomePage = () => {
-    return (
+    // Access data from our global state using the useContext hook.
+    const { authenticatedUser } = useContext(Context);
+    return authenticatedUser ? (
+        <Redirect to="myproducts" />
+    ) : (
         <div className="welcome-container">
             <div class="welcome-sub-container">
                 <h1>

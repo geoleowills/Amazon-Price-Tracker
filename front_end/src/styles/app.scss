@@ -11,12 +11,17 @@ a {
     display: block;
 }
 
+html,
+body {
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
 .welcome-container {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f2f2f2;
     color: white;
 
     .welcome-sub-container {
@@ -77,5 +82,60 @@ a {
 
     &:hover {
         background-color: #bfbfbf;
+    }
+}
+
+.errors-container {
+    margin-bottom: 2rem;
+    text-align: center;
+    list-style-type: none;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+.target-price-label {
+    position: absolute;
+    margin-left: -18px;
+    margin-top: 8px;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.header {
+    width: 100%;
+    // max-width: 1300px;
+    padding: 0 calc((100vw - 1300px) / 2);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #23303e;
+    border-bottom: 3px solid #fe9403;
+    color: white;
+
+    h1 {
+        margin-left: 35px;
+    }
+
+    .sign-out-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 35px;
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .sign-out {
+            text-decoration: none;
+            color: #23303e;
+            background-color: #f2f2f2;
+            border-radius: 7px;
+            padding: 4px 5px;
+        }
     }
 }
