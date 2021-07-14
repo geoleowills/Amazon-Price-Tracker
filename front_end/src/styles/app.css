@@ -154,6 +154,7 @@ body {
 
 .header h1 {
   margin-left: 35px;
+  font-weight: 600;
 }
 
 .header .sign-out-container {

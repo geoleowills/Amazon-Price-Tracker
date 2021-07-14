@@ -8,6 +8,7 @@ import CreateProduct from "./components/CreateProduct";
 import PrivateRoute from "./components/PrivateRoute";
 import MyProducts from "./components/MyProducts";
 import Header from "./components/Header";
+import UserSignOut from "./components/UserSignOut";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
             <Switch>
                 <PrivateRoute path="/createproduct" component={CreateProduct} />
                 <PrivateRoute path="/myproducts" component={MyProducts} />
+                <Route path="/signout" component={UserSignOut} />
             </Switch>
         </Router>
     );
